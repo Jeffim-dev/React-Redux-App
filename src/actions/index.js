@@ -13,5 +13,5 @@ export const fetchActivity = () => dispatch => {
         dispatch({ type: FETCHING_ACTIVITY_SUCCESS, payload: res.data.rates });
       })
       .catch(err => console.log(err));
-       dispatch( { type: FETCHING_ACTIVITY_FAILURE, payload: "error getting rates" })
+       dispatch( { type: FETCHING_ACTIVITY_FAILURE, payload: "Error getting rates" })
 }

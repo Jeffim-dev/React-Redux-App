@@ -8,8 +8,10 @@ const CurrencyForm = props => {
     <>
       <button onClick={ props.fetchActivity }>Get Rate</button>
       <div>
-        {props.error &&<p>{props.error}</p>
-        <h4>CAN:{props.currency.CAD}</h4>}
+        {props.error && <p className="error">{props.error}</p>}
+        <h4>USD:{props.currency.CAD}</h4>
+        <h4>CAN:{props.currency.CAD}</h4>
+        <h4>EUR:{props.currency.CAD}</h4>
       </div>
 
     </>

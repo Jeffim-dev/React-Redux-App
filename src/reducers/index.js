@@ -15,11 +15,13 @@ export const currencyReducer = (state = initialState, action) => {
     case FETCHING_ACTIVITY_START:
       return {
         ...state,
+        error: '',
         isFetching: true
       }
     case FETCHING_ACTIVITY_SUCCESS:
       return {
         ...state,
+        error: '',
         isFetching: false,
         currency: action.payload
       }
